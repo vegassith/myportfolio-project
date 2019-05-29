@@ -1,52 +1,56 @@
 class PortfoliosController < ApplicationController
-    before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_portfolio_item, only: %i[show edit update destroy]
 
-    def index
-        @portfolio_items = Portfolio.all
-    end
+  def index
+    @portfolio_items = Portfolio.all
+  end
 
-    def show
+  def show
+  end
 
-    end
+  def new
+    @portfolio_item = Portfolio.new
+  end
 
-    def new
-        @portfolio_item = Portfolio.new
-    end
+  def create
+    @portfolio_item = Portfolio.new(portfolio_item_params)
 
-    def create
-        @portfolio_item = Portfolio.new(portfolio_item_params)
-
-        respond_to do |format|
-            if @portfolio_item.save
-              format.html { redirect_to portfolios_path, notice: 'Your Portfolio item is now live' }
-            else
-              format.html { render :new }
-            end
-          end
-    end
-
-    def edit       
-    end
-
-    def update
-      respond_to do |format|
-        if @portfolio_item.update(portfolio_item_params)
-            format.html { redirect_to portfolios_path, notice: 'Your Portfolio item was successfully updated.' }
-        else
-            format.html { render :edit }      
-        end
+    respond_to do |format|
+      if @portfolio_item.save
+        format.html { redirect_to portfolios_path, notice: 'Your Portfolio item is now live' }
+      else
+        format.html { render :new }
       end
     end
+  end
 
-    private
+  def edit
+  end
 
-    def portfolio_item_params
-        params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
+  def update
+    respond_to do |format|
+      if @portfolio_item.update(portfolio_item_params)
+        format.html { redirect_to portfolios_path, notice: 'Your Portfolio item was successfully updated.' }
+      else
+        format.html { render :edit }
+      end
     end
+  end
 
-   def set_portfolio_item
+  def destroy
+    @portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_path, notice: 'Your Portfolio item was successfully deleted.' }
+    end
+  end
+
+  private
+
+  def portfolio_item_params
+    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
+  end
+
+  def set_portfolio_item
     @portfolio_item = Portfolio.find(params[:id])
-   end
-
-
+  end
 end
