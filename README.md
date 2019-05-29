@@ -1,6 +1,6 @@
 # My Portfolio Project
 
-> This is a Ruby on Rails application that allows users to create their own portfolios. >
+> This is a Ruby on Rails application that allows users to create their own portfolios. 
 
 ### Features
 
