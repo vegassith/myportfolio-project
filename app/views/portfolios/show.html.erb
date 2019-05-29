@@ -1,0 +1,19 @@
+
+<%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) %>
+    <div>
+        <%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %>
+    </div>
+
+<div>
+        <h2><%= @portfolio_item.title%></h2>
+    </div>
+    <div>
+        <em><%= @portfolio_item.subtitle%></em>
+    </div>
+    <div>
+        <%= @portfolio_item.body%>
+    </div>
+
+
+
+  
