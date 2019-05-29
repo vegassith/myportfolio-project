@@ -29,3 +29,4 @@
 /config/credentials.yml
 /config/storage.yml
 /config/database.yml
+.vscode/*
