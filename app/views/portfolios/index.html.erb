@@ -2,7 +2,7 @@
   <div><%= link_to "Create New Portfolio", new_portfolio_path %></div>
 <% @portfolio_items.each do |portfolio_item|%>
     <div>
-        <%= portfolio_item.title%>
+        <%= link_to portfolio_item.title, portfolio_path(portfolio_item) %>
     </div>
     <div>
         <%= portfolio_item.subtitle%>
@@ -14,5 +14,5 @@
         <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
     </div>
 
-    <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) %>
+    <%= link_to "Edit", edit_portfolio_path(portfolio_item) %>
     <% end %>
