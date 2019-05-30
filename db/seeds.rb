@@ -51,3 +51,5 @@ puts "Created 2 Portfolio Items"
 end
 
 puts "Created 3 technologies"
+
+#Portfolio.create!(title: "Web App", subtitle: "asashs", body: "test body", technologies_attributes: [{name: 'Ruby'}, {name: 'Rails'}, {name: 'Angular'}, {name: 'Ionic'}])
