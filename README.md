@@ -37,10 +37,9 @@
 - Implement validations		
 - Create data relationships		
 - Create custom scopes		
-- Implement virtual attributes		
 - Setting data defaults		
 - Integrate concerns		
-- Nested attributes for blog tags																			
+- Nested attributes for portfolio technologies 																			
 ## Controllers	
 ### Walk through how controllers work in Rails	
 - Data flow review		
@@ -70,7 +69,8 @@
 ## RubyGems Integration	
 ### Utilize various RubyGems in order to implement Bootstrap, Devise, and Petergate, along with building your own gem.	
 - Integrate bootstrap		
-- Integrate devise		
+- Integrate devise	
+- Implement virtual attributes	
 - Integrate Petergate		
 - Build a custom gem that outputs your top rated skill	
 
