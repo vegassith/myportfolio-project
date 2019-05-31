@@ -39,14 +39,22 @@
 - Create custom scopes		
 - Setting data defaults		
 - Integrate concerns		
-- Nested attributes for portfolio technologies 																			
+- Nested attributes for portfolio technologies 			
+
+## Authentication
+### Implement full authentication into the portfolio app
+- Integrate the devise gem
+- Customize the routes
+- Customize the attributes 
+
 ## Controllers	
 ### Walk through how controllers work in Rails	
 - Data flow review		
 - Working with sessions		
 - Analyzing params		
 - How the Application Controller works		
-- Working with strong params																											
+- Working with strong params
+
 ## Rails Views	
 ### Learn how to work with the view system in Rails.	
 - Working with the master layout file		
@@ -67,9 +75,8 @@
 - Error management
 
 ## RubyGems Integration	
-### Utilize various RubyGems in order to implement Bootstrap, Devise, and Petergate, along with building your own gem.	
-- Integrate bootstrap		
-- Integrate devise	
+### Utilize various RubyGems in order to implement Bootstrap, and Petergate, along with building your own gem.	
+- Integrate bootstrap			
 - Implement virtual attributes	
 - Integrate Petergate		
 - Build a custom gem that outputs your top rated skill	
