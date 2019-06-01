@@ -53,3 +53,10 @@ end
 puts "Created 3 technologies"
 
 #Portfolio.create!(title: "Web App", subtitle: "asashs", body: "test body", technologies_attributes: [{name: 'Ruby'}, {name: 'Rails'}, {name: 'Angular'}, {name: 'Ionic'}])
+
+User.create(name: "Luke Skywalker", 
+    email: "mark@test.org", 
+    password: "test123", 
+    password_confirmation: "test123")
+
+puts "Created one user"
