@@ -46,6 +46,7 @@
 - Integrate the devise gem
 - Customize the routes
 - Customize the attributes 
+- Virtual Attributes
 
 ## Controllers	
 ### Walk through how controllers work in Rails	
