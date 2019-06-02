@@ -66,7 +66,8 @@
 - Integrating content helpers		
 - Partials for data collections		
 - Partials with local variables		
-- Partials for manual collections			
+- Partials for manual collections
+- View helper methods		
 																									
 ## Debugging	
 ### How to properly debug a Rails application.	
