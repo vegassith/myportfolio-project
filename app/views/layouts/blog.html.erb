@@ -28,7 +28,7 @@
      <%= yield %>
     </div>
     
-    <%= render 'shared/nav_bar'%>
+    <%= render 'shared/nav_bar', location: 'bottom' %>
 
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
