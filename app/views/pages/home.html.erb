@@ -4,6 +4,9 @@
   <%= @posts.inspect%>
 
 <h1>Skills</h1>
-  <%= @skills.inspect%>
+  <% @skills.each do |skill|%>
+  <%= skill.title %>: 
+  <%= number_to_percentage(skill.percent_utilized, precision: 0) %><br>
+  <% end %>
 <hr>
 
