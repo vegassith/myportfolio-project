@@ -23,4 +23,10 @@ module ApplicationHelper
     content_tag(:div, "My Content", class: "my-class")
   end
 
+
+  def copyright_generator
+    DeathStarViewTool::Renderer.copyright('Luke Skywalker', 'All rights reserved')
+  end
+
+
 end

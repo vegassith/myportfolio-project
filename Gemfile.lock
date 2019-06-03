@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/vegassith/deathstar_view_tool
+  revision: a3c72b85eaea33091a0c8cdc21b1d02e9f123be4
+  specs:
+    deathstar_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -212,6 +218,7 @@ DEPENDENCIES
   bootstrap (~> 4.3, >= 4.3.1)
   byebug
   coffee-rails (~> 4.2)
+  deathstar_view_tool!
   devise (~> 4.6, >= 4.6.2)
   friendly_id (~> 5.2, >= 5.2.5)
   jbuilder (~> 2.5)

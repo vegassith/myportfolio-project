@@ -79,7 +79,7 @@
 ## RubyGems Integration	
 ### Utilize various RubyGems in order to implement Bootstrap, along with building your own gem.	
 - Integrate bootstrap			
-- Build a custom gem that outputs your top rated skill	
+- Build a custom gem that outputs your copyright details	
 
 ## Authorization in Rails
 - Integrate Petergate		
