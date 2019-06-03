@@ -13,12 +13,12 @@
   </head>
 
   <body class="text-center">
-
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= render 'shared/nav_bar', location: 'top' %>
+    <%= render 'shared/application_nav' %>
 
     <%= login_helper %>
     
@@ -28,6 +28,7 @@
     
     <%= source_helper("application") %>
 
-    <%= copyright_generator %>
+    <%= render 'shared/footer'%>
+      </div>
   </body>
 </html>
