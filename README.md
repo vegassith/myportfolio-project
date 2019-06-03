@@ -77,11 +77,13 @@
 - Error management
 
 ## RubyGems Integration	
-### Utilize various RubyGems in order to implement Bootstrap, and Petergate, along with building your own gem.	
+### Utilize various RubyGems in order to implement Bootstrap, along with building your own gem.	
 - Integrate bootstrap			
-- Implement virtual attributes	
-- Integrate Petergate		
 - Build a custom gem that outputs your top rated skill	
+
+## Authorizaion in Rails
+- Integrate Petergate		
+- Add roles to the user model
 
 ## Stylesheets	
 ### Integrate custom styles in Rails	
