@@ -82,7 +82,9 @@
 - Build a custom gem that outputs your copyright details	
 
 ## Authorization in Rails
-- Integrate Petergate		
+### Integrate authorization for the app's permission structure.
+- Integrate Petergate
+- Configure petergate gem
 - Add roles to the user model
 
 ## Stylesheets	
