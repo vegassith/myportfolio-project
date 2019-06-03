@@ -84,6 +84,7 @@
 ## Authorization in Rails
 - Integrate Petergate		
 - Add roles to the user model
+- Implement code for authorization
 
 ## Stylesheets	
 ### Integrate custom styles in Rails	
