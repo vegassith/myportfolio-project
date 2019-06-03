@@ -81,7 +81,7 @@
 - Integrate bootstrap			
 - Build a custom gem that outputs your top rated skill	
 
-## Authorizaion in Rails
+## Authorization in Rails
 - Integrate Petergate		
 - Add roles to the user model
 
