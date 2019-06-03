@@ -1,5 +1,5 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: %i[show edit update destroy]
+  before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
   layout "portfolio"
 
   def index
@@ -20,7 +20,6 @@ class PortfoliosController < ApplicationController
 
   def create
     @portfolio_item = Portfolio.new(portfolio_item_params)
-
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your Portfolio item is now live' }
