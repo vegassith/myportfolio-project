@@ -97,8 +97,10 @@
 ## JavaScript Integration	
 ### Integrate JavaScript tools into Rails	
 - Basic JavaScript integration		
+- jQuery Drag and Drop Interface for Portfolio Items
+- Sortable connection to Rails app
+- Implement Security
 - CoffeeScript Deep Dive		
-- jQuery Drag and Drop Interface for Portfolio Items	
 
 ## Image Management	
 ### Integrate images into a Rails application.	
