@@ -99,6 +99,7 @@
 - Basic JavaScript integration		
 - jQuery Drag and Drop Interface for Portfolio Items
 - Sortable connection to Rails app
+- Implement Security
 - CoffeeScript Deep Dive		
 
 ## Image Management	

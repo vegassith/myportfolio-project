@@ -22,6 +22,9 @@ ready = ->
       type: 'PUT'
       url: '/portfolios/sort'
       data: order: updated_order
+      headers: {
+        'X-CSRF-Token': document.querySelector("meta[name=csrf-token]").content
+      }
     return
   return
 
