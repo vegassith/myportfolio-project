@@ -1,6 +1,7 @@
 <div class="col-md-8 blog-main">
+        <%= paginate @blogs %>
     <%= render @blogs %>
     <nav class="blog-pagination">
-        <%= paginate @blogs %>
+            <%= paginate @blogs %>
     </nav>
 </div><!-- /.blog-main -->
