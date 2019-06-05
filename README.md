@@ -106,6 +106,7 @@
 ### Integrate images into a Rails application.	
 - Manual integration		
 - Rails Asset management for images		
+- Image Background for application
 - Implement a video background on the homepage	
 
 ## Form Integration	
