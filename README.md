@@ -112,10 +112,11 @@
 
 ## Form Integration	
 ### Integrate forms for any features that need them.	
-- Form tag with security tokens		
+- Form tag 
 - Form for		
 - JavaScript Form Integrations		
 - Custom validations on forms
+- HTML form security tokens
 
 ## Working with Lib	
 ### Use the Lib directory to create a module that calls an outside API to display Tech News.	
