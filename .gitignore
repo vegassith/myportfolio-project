@@ -30,3 +30,5 @@
 /config/storage.yml
 /config/database.yml
 .vscode/*
+/public/uploads
+.env
