@@ -26,10 +26,12 @@
 
      <%= yield %>
   
-    
+     <%= render 'shared/alerts' %>
+     
     <%= source_helper("application") %>
 
     <%= render 'shared/application_footer'%>
+
       </div>
   </body>
 </html>
