@@ -2,7 +2,7 @@
   <% if blog.errors.any? %>
 
       <% blog.errors.full_messages.each do |message| %>
-      <%= js add_gritter(message, title: "Protfolio App Error", sticky: false, image: :error ) %>
+        <%= alert_generator(message) %>
       <% end %>
 
   <% end %>
