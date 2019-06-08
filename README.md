@@ -121,8 +121,9 @@
 ## Working with Lib	
 ### Use the Lib directory to create a module that calls an outside API to display Tech News.	
 - Build module and integrate into App pipeline		
-- Integrate HTTP gem for outside data calls		
-- Call data from module		
+- Integrate Twitter gem for tech news
+- Call data from module	
+- Parse the data for views	
 
 ## Action Cable - Live Data Feature	
 ### Integrate a live chat feature for blog comments using ActionCable.	
