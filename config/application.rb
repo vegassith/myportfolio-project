@@ -27,5 +27,7 @@ module MyPortfolio
       g.javascripts   false
     end
 
+     config.eager_load_paths << "#{Rails.root}/lib"
+
   end
 end
