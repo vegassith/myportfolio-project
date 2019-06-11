@@ -128,10 +128,10 @@
 ## Action Cable - Live Data Feature	
 ### Integrate a live chat feature for blog comments using ActionCable.	
 - ActionCable Overview		
+- Integrate the Redis database
 - Build out form for comments		
 - Build out the model		
 - Integrate users and associate them with comments		
-- Integrate the Redis database		
 - Customize the views																					
 																									
 																									
