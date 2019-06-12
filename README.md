@@ -154,6 +154,7 @@
 - New blog header
 - Markdown Integration
 - Favicon Integration
+- Hide draft posts via show action for blogs
 
 																									
 																									
