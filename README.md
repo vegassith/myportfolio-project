@@ -138,10 +138,10 @@
 ### Clean up needed before app can be launched
 - Recent scope on blogs
 - Require a topic for blogs
+- Topic for blog form page
 - Topic index and show
 - Topic for blog widget with scope for topics with blogs
 - Blog Status update in form
-- Topic for blog form page
 - Skills on about page
 - Additional information on about page
 - Custom font
