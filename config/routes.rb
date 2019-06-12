@@ -15,6 +15,8 @@ Rails.application.routes.draw do
       get :toggle_status
     end
   end
+
+  resources :topics
   
   mount ActionCable.server => '/cable'
   
