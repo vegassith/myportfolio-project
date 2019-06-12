@@ -11,8 +11,8 @@
               <%= recent_blog.title %>
             </h3>
             <div class="mb-1 text-muted"> Published <%= time_ago_in_words(recent_blog.created_at) %> ago</div>
-            <p class="card-text mb-auto"><%= truncate(recent_blog.body, length: 200) %></p>
-            <%= link_to "Continue Reading", recent_blog %>
+            <p class="card-text mb-auto"><%= truncate(markdown(recent_blog.body), length: 150) %>
+            <%= link_to "Continue Reading", recent_blog %></p>
           </div>
         </div>
       </div>
