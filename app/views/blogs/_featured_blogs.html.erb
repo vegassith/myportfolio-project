@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Recent Blog Posts</h1>
+  <div class="jumbotron p-3 p-md-5 rounded "> 
+    <div class="row mb-2">
+      <% @blogs.first(2).each do |recent_blog| %>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary"></strong>
+            <h3 class="mb-0">
+              <%= recent_blog.title %>
+            </h3>
+            <div class="mb-1 text-muted"> Published <%= time_ago_in_words(recent_blog.created_at) %> ago</div>
+            <p class="card-text mb-auto"><%= truncate(recent_blog.body, length: 200) %></p>
+            <%= link_to "Continue Reading", recent_blog %>
+          </div>
+        </div>
+      </div>
+
+      <%end %>
+    </div>
+  </div>
+
+</div>

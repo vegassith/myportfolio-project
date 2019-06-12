@@ -132,7 +132,29 @@
 - Build out form for comments		
 - Build out the model		
 - Integrate users and associate them with comments		
-- Customize the views																					
+- Customize the views
+
+## Final Features for project
+### Clean up needed before app can be launched
+- Recent scope on blogs
+- Require a topic for blogs
+- Topic index and show
+- Topic for blog widget with scope for topics with blogs
+- Blog Status update in form
+- Topic for blog form page
+- Skills on about page
+- Additional information on about page
+- Custom font
+- Card design for about and contact
+- Source tracker on blog and portfolio 
+- Breadcrumb on blog show
+- Icons for actions on blogs
+- Update blog scope so only admin users see draft posts
+- Partial for admin blog actions
+- New blog header
+- Markdown Integration
+- Favicon Integration
+
 																									
 																									
 																										

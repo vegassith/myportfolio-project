@@ -1,5 +1,5 @@
+<%= render 'featured_blogs', collection: @blogs.limit(2)%>
 <div class="col-md-8 blog-main">
-        <%= paginate @blogs %>
     <%= render @blogs %>
     <nav class="blog-pagination">
             <%= paginate @blogs %>
