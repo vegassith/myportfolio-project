@@ -155,6 +155,8 @@
 - Markdown Integration
 - Favicon Integration
 - Hide draft posts via show action for blogs
+- Portfolio image fix
+- Update seed file 
 
 																									
 																									

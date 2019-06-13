@@ -1,17 +1,21 @@
-<main role="main" class="inner cover">
-    <h1 class="cover-heading">About Me</h1>
+<main role="main" class="inner cover app-card-contanier">
+  <div class="card">
+      <h1 class="cover-heading">About Me</h1>
     
-  <hr>
+      <hr>
+    
+    <div class="row">
+    <div class="col-md-4">
+    
+    <%= image_tag "profile.jpg", width:300,alt: "Profile Image"%>
+    </div>
+    <div class="col-md-8">
+            <p class="lead_about">Let's add some information about my career here....</p>
+    
+    </div>
+    
+    </div>
 
-<div class="row">
-<div class="col-md-4">
+  </div>
 
-<%= image_tag "profile.jpg", width:300,alt: "Profile Image"%>
-</div>
-<div class="col-md-8">
-        <p class="lead">Let's add some information about me career here....</p>
-
-</div>
-
-</div>
 </main>
