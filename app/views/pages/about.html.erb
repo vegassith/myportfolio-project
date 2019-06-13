@@ -8,6 +8,25 @@
     <div class="col-md-4">
     
     <%= image_tag "profile.jpg", width:300,alt: "Profile Image"%>
+      <div class="skills">
+    <h2>Skills</h2>
+    <% @skills.each do |skill| %>
+        <h4><%= skill.title %></h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated <%=progressbar_colors%>" 
+              role="progressbar"              
+              aria-valuenow="<%= skill.percent_utilized %>" 
+              aria-valuemin="0" 
+              aria-valuemax="100"
+              style="width:<%= skill.percent_utilized %>%" 
+              >
+
+          </div>
+          <%= skill.percent_utilized %>
+        </div>
+        
+    <% end %>
+      </div>
     </div>
     <div class="col-md-8">
             <p class="lead_about">Let's add some information about my career here....</p>
