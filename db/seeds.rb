@@ -59,4 +59,6 @@ User.create(name: "Luke Skywalker",
     roles: 'site_admin'
     )
 
-puts "Created one user"
+puts "Created admin user"
+
+
