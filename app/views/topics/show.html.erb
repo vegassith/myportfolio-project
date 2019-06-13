@@ -1,0 +1,7 @@
+<div class="col-md-8 blog-main">
+    <H1><%= @topic.title %></H1>
+    <%= render @blogs %>
+    <nav class="blog-pagination">
+    <%= paginate @blogs %>
+    </nav>
+</div>

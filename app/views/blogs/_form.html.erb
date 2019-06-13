@@ -1,24 +1,40 @@
-<%= form_with(model: blog, local: true) do |form| %>
-  <% if blog.errors.any? %>
+<%= form_with(model: blog, local: true) do |f| %>
+<% if blog.errors.any? %>
 
-      <% blog.errors.full_messages.each do |message| %>
-        <%= alert_generator(message) %>
-      <% end %>
-
-  <% end %>
-
-  <div class="form-group">
-
-    <%= form.text_field :title, class:"form-control", placeholder: 'Title' %>
-  </div>
-
-  <div class="form-group">
-    
-    <%= form.text_area :body, class:"form-control", rows: 15, placeholder: "Content" %>
-  </div>
-
-  <div class="form-group">
-    <%= form.submit "Submit", class:"btn btn-primary" %>
-  </div>
+<% blog.errors.full_messages.each do |message| %>
+<%= alert_generator(message) %>
 <% end %>
 
+<% end %>
+
+<div class="form-group">
+
+  <%= f.text_field :title, class:"form-control", placeholder: 'Title' %>
+</div>
+
+<div class="form-group">
+  <%= f.label :topic_id, "Topic" %>
+  <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                              {
+                                include_blank: true
+                              },
+                              class: "form-control"   
+                              ) 
+       %>
+</div>
+
+<div class="form-group">
+  <%= f.radio_button :status, "draft" %>
+  <%= f.label :status, "Draft" %>
+
+  <%= f.radio_button :status, "published" %>
+  <%= f.label :status, "Published" %>
+</div>
+<div class="form-group">
+  <%= f.text_area :body, class:"form-control", rows: 15, placeholder: "Content" %>
+</div>
+
+<div class="form-group">
+  <%= f.submit "Submit", class:"btn btn-primary" %>
+</div>
+<% end %>

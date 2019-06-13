@@ -26,5 +26,11 @@ module PagesHelper
 
   end
 
+  def progressbar_colors
+    colors = ['bg-primary', 'bg-success', 'bg-info', 'bg-warning', 'bg-danger']
+    random_number = rand(5)
+    colors[random_number]
+  end
+
 end
 
