@@ -18,6 +18,8 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= requie lib/typed
+//= requie typed-implementation
 //= require cable
 //= require turbolinks
 //= require_tree .
