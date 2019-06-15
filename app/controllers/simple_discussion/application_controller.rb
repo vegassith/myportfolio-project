@@ -1,4 +1,5 @@
 class SimpleDiscussion::ApplicationController < ::ApplicationController
+  before_action :set_sidebar_topics, except: [:update, :create, :toggle_status, :destory]
   layout "simple_discussion"
 
   def page_number
@@ -34,4 +35,9 @@ class SimpleDiscussion::ApplicationController < ::ApplicationController
   def redirect_to_root
     redirect_to simple_discussion.root_path, alert: "You aren't allowed to do that."
   end
+
+  def set_sidebar_topics
+    @set_sidebar_topics = Topic.with_blogs
+  end
+
 end

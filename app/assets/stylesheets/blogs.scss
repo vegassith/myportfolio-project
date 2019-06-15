@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
-
+@import "simple_discussion";
 /* stylelint-disable selector-list-comma-newline-after */
 
 /*
@@ -136,6 +136,9 @@
  * Footer
  */
 .blog-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
