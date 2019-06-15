@@ -158,7 +158,13 @@
 - Portfolio image fix
 - Update seed file 
 
-																									
+## Discussion Forum
+### Give the ability to create a discussion forum
+- Implement simple_discussion gem
+- Install Views, controlers
+- Configure Gem
+
+ 																
 																									
 																										
 																										

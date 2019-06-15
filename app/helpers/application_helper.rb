@@ -52,6 +52,12 @@ module ApplicationHelper
         url: tech_news_path,
         title: 'Tech News'
       },
+      
+     {
+        url: simple_discussion_path,
+        title: 'Forum'
+      },
+
     ]
   end
 

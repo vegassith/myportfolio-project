@@ -21,4 +21,6 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
   
   root to: 'pages#home'
+  
+  mount SimpleDiscussion::Engine => "/forum"
 end
